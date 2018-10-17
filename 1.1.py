@@ -2,12 +2,13 @@
 #Implement an algorithm to determine if a string has all unique characters. What if you can not use additional data structures?
 
 # -*- coding:utf-8 -*-
-def checkDifferent1(self, iniString):
-    return len(set(iniString)) == len(iniString)
+class Different:
+    def checkDifferent1(self, iniString):
+        return len(set(iniString)) == len(iniString)
 
 
-def checkDifferent2(self, iniString):
-    for i in iniString:
-        if (iniString.count(i)>1):
-            return False
-    return True
+    def checkDifferent2(self, iniString):
+        for i in iniString:
+            if (iniString.count(i)>1):
+                return False
+        return True
